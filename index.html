@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Click Game</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Click Game</h1>
+      <h4>Click the red button as many times as you can for 10 seconds!</h4>
+      <button id="start" class="btn btn-md btn-primary" type="button" name="button">START</button>
+      <div>
+        <h4 id="timeCount">Time Remaining</h4>
+        <progress value="0" max="10" id="progressBar"></progress>
+        <div id="replay">
+          <button id="replayButton" type="button" name="button">Play Again!</button>
+        </div>
+      </div>
+    </div>
+    <div class="well text-center">
+      <button id="button" type="button" class="btn-danger">Click Me</button>
+    </div>
+    <div class="well text-center">
+      <div id="score">
+        <h1 id="scoreCount"></h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/javascript/app.js" charset="utf-8"></script>
+</body>
+
+</html>
